@@ -9,7 +9,7 @@ const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "#dcc" },
+  { name: "Contact", link: "#contact" },
 ];
 
 const animatedWords = ["designs", "develops", "builds", "creates"];
