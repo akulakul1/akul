@@ -15,7 +15,7 @@ const Contact = () => {
     };
 
     try {
-      const res = await fetch("https://your-backend-domain.com", {
+      const res = await fetch("https://backend-portfolio-2-57uq.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
