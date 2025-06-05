@@ -15,7 +15,7 @@ const Contact = () => {
     };
 
     try {
-      const res = await fetch("https://backend-portfolio-2-57uq.onrender.com", {
+      const res = await fetch("https://backend-portfolio-2-57uq.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
