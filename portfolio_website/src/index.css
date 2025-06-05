@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@theme {
+  --animate-myCustomeAnimation: mycustomeAnimation 3s ease-in-out infinite;
+}
+
+@keyframes mycustomeAnimation {
+  0%, 
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@theme {
+  --animate-slideInTop: slideInTop 1s ease-out forwards;
+}
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@theme {
+  --animate-bouncslide: bouncslide 3.2s ease-in-out infinite;
+}
+
+@keyframes bouncslide {
+  /* Slide in: first 37.5% */
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) rotate(0deg);
+  }
+  37.5% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  
+  /* Bounce loop: repeat between 37.5% and 100% */
+  50% {
+    transform: translateY(0) rotate(3deg);
+  }
+  75% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+@theme {
+  --animate-slideIntop: slideIntop 1.2s ease-out forwards;
+  --animate-bounceFloat: bounceFloat 2s ease-in-out 1.2s infinite;
+}
+
+@keyframes slideIntop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
