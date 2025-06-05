@@ -15,7 +15,7 @@ const Contact = () => {
     };
 
     try {
-      const res = await fetch("https://backend-portfolio-2-57uq.onrender.com", {
+      const res = await fetch("https://backend-portfolio-2-57uq.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -119,7 +119,9 @@ const Contact = () => {
             Send Message
           </button>
           {formStatus && (
-            <p className="mt-4 text-sm text-green-600">{formStatus}</p>
+            <p className={`mt-4 text-sm ${formStatus.startsWith("✅") ? "text-green-600" : "text-red-600"}`}>
+              {formStatus}
+            </p>
           )}
         </form>
       </div>
