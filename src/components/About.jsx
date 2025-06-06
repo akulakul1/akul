@@ -5,38 +5,39 @@ const cardData = [
   {
     id: '01',
     title: 'UI/UX Design',
-    description: 'Crafting intuitive interfaces with user-centric design principles.',
-    icon: '/design.png',
+    description: 'Designing intuitive, user-focused interfaces with strong UI expertise for seamless experiences.',
+    
   },
   {
     id: '02',
-    title: 'Fleet Management',
-    description: 'Manage and optimize vehicle fleets with real-time insights.',
-    icon: '/fleet.png',
+    title: 'Full stack Development',
+    description: 'Building robust, scalable web applications with modern frameworks and technologies.',
+    
+    
   },
   {
     id: '03',
-    title: 'Web Development',
-    description: 'Building responsive and dynamic websites with modern tech.',
-    icon: '/web.png',
+    title: 'API Integration',
+    description: 'Connecting frontend interfaces with backend services for seamless data flow.',
+    
   },
   {
     id: '04',
-    title: 'Brand Strategy',
-    description: 'Aligning visuals with brand goals for impact and consistency.',
-    icon: '/brand.png',
+    title: 'Data Science',
+    description: 'Building and deploying AI models for data-driven insights and automation.',
+    
   },
   {
     id: '05',
-    title: 'App Prototyping',
-    description: 'Rapid prototyping for MVPs and early user feedback.',
-    icon: '/prototype.png',
+    title: 'Project Management',
+    description: 'Overseeing projects from conception to completion, ensuring timely delivery and alignment with goals.',
+    
   },
   {
     id: '06',
-    title: 'SEO & Analytics',
-    description: 'Improving reach with search optimization and smart metrics.',
-    icon: '/seo.png',
+    title: 'Mobile App Development',
+    description: 'Building responsive and user-friendly mobile applications for iOS and Android.',
+    
   },
 ];
 
@@ -46,7 +47,7 @@ const AboutSection = () => {
 
       {/* Left + Center: About and Grid */}
       <motion.div
-        className="flex flex-col lg:flex-row gap-14"
+        className="flex flex-col lg:flex-row gap-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -54,7 +55,7 @@ const AboutSection = () => {
       >
         {/* Left Column: Titles */}
         <motion.div
-          className="flex flex-col min-w-[150px]"
+          className="flex flex-col gap-25 min-w-[150px]"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -77,13 +78,11 @@ const AboutSection = () => {
           viewport={{ once: false }}
         >
           <p className="max-w-xl text-lg text-black leading-relaxed">
-            I'm a <strong>UI/UX Designer</strong> and <strong>Web Developer</strong><br />
-            who both designs and develops responsive,<br />
-            user-friendly websites and web applications.
+            I craft polished, user-focused digital experiences through thoughtful <strong>UI/UX design, full-stack web development</strong>, and seamless backend API integration. With a strong foundation in <strong>data science</strong> and a dedication to problem solving, I build efficient, scalable solutions that are both responsive and impactful. My work reflects a deep commitment to <strong>detail, performance, and user satisfaction</strong>.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {cardData.map(({ id, title, description, icon }, index) => (
+            {cardData.map(({ id, title, description }, index) => (
               <motion.div
                 key={id}
                 className="relative group w-[120px] h-[120px] md:w-[160px] md:h-[160px] bg-[#C8E8FF] rounded-xl shadow-md p-3 md:p-4 overflow-hidden transition-transform duration-300 hover:scale-105"
@@ -94,11 +93,7 @@ const AboutSection = () => {
               >
                 <div className="text-xs text-gray-500">{id}</div>
                 <div className="text-sm md:text-base font-semibold mt-1">{title}</div>
-                <img
-                  src={icon}
-                  alt={title}
-                  className="absolute bottom-3 right-3 w-6 h-6 md:w-8 md:h-8 object-contain"
-                />
+                
                 <div className="absolute inset-0 bg-white bg-opacity-95 p-2 text-[10px] md:text-sm text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center justify-center text-center">
                   {description}
                 </div>
@@ -118,23 +113,34 @@ const AboutSection = () => {
       >
         <h2 className="text-xl font-extrabold mb-4">EDUCATION</h2>
         <div className="border-l-2 border-black pl-4 space-y-8">
-          {[1, 2].map((_, idx) => (
-            <motion.div
-              className="relative"
-              key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              viewport={{ once: false }}
-            >
-              <div className="w-3 h-3 bg-black rounded-full absolute -left-[22px] top-1"></div>
-              <p className="text-sm leading-relaxed">
-                I'm a UI/UX Designer and Web Developer<br />
-                and develops responsive, user-friendly web<br />
-                applications.
-              </p>
-            </motion.div>
-          ))}
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: false }}
+          >
+            <div className="w-3 h-3 bg-black rounded-full absolute -left-[22px] top-1"></div>
+            <p className="text-sm leading-relaxed">
+              BTech in Computer Science and Engineering<br />
+              Mar Baselios College of Engineering and Technology, TVM<br />
+              2022 – 2026
+            </p>
+          </motion.div>
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            viewport={{ once: false }}
+          >
+            <div className="w-3 h-3 bg-black rounded-full absolute -left-[22px] top-1"></div>
+            <p className="text-sm leading-relaxed">
+              Saraswathi Vidyalaya Higher Secondary School<br />
+              Trivandrum<br />
+              Graduated: 2022
+            </p>
+          </motion.div>
         </div>
       </motion.div>
 

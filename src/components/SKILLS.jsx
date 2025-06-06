@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const skills = [
   { title: "Figma", icon: "/Figma.png", info: "12 Projects", bg: "bg-purple-400" },
-  { title: "Tailwind", icon: "/icons/tailwind.png", info: "18 Projects", bg: "bg-red-400" },
-  { title: "AI", icon: "/icons/ai.png", info: "10 Models", bg: "bg-yellow-300" },
-  { title: "ML", icon: "/icons/ml.png", info: "14 Datasets", bg: "bg-green-300" },
-  { title: "API", icon: "/icons/api.png", info: "20 APIs", bg: "bg-blue-300" },
-  { title: "React", icon: "/icons/react.png", info: "15 Apps", bg: "bg-pink-300" },
-  { title: "DevOps", icon: "/icons/devops.png", info: "8 Projects", bg: "bg-orange-300" },
-  { title: "Python", icon: "/icons/python.png", info: "25 Scripts", bg: "bg-indigo-300" },
-  { title: "Node.js", icon: "/icons/node.png", info: "12 Servers", bg: "bg-lime-300" },
+  { title: "React", icon: "/React.png", info: "6 Projects", bg: "bg-red-400" },
+  { title: "Data Science", icon: "/D.png", info: "2 Models", bg: "bg-yellow-300" },
+  { title: "Flutter", icon: "/Flutter.png", info: "3 Projects", bg: "bg-green-300" },
+  { title: "API", icon: "/API.png", info: "6 Integrations", bg: "bg-blue-300" },
+  { title: "Project Management", icon: "/PM.png", info: "5 Projects", bg: "bg-pink-300" },
+  { title: "Design", icon: "/Figma.png", info: "8 Projects", bg: "bg-orange-300" },
+  { title: "Python", icon: "Python.png", info: "6 Projects", bg: "bg-indigo-300" },
+  { title: "Tailwind", icon: "Tailwind.png", info: "6 Projects", bg: "bg-lime-300" },
 ];
 
 export default function SkillCards() {

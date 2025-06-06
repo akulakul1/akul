@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("");
@@ -48,12 +49,12 @@ const Contact = () => {
         <div className="space-y-6 pb-6 text-base">
           <div>
             <h4 className="font-semibold text-black text-lg">Location</h4>
-            <p>1234 N Spring St, Los Angeles, CA 90012, United States.</p>
+            <p>Raveendram,Irkunnam Lane<br />Netteyam,Trivandrum,<br />Kerala,695013</p>
           </div>
 
           <div>
             <h4 className="font-semibold text-black text-lg">Phone</h4>
-            <p>+01 - 123 456 7890</p>
+            <p>+91 9895222700</p>
           </div>
 
           <div>
@@ -64,10 +65,30 @@ const Contact = () => {
           <div className="pt-4">
             <h4 className="font-semibold text-black mb-2 text-lg">Follow me:</h4>
             <div className="flex gap-6 text-2xl">
-              <a href="#"><i className="fab fa-facebook-f text-gray-600 hover:text-black transition" /></a>
-              <a href="#"><i className="fab fa-twitter text-gray-600 hover:text-black transition" /></a>
-              <a href="#"><i className="fab fa-instagram text-gray-600 hover:text-black transition" /></a>
-              <a href="#"><i className="fab fa-linkedin-in text-gray-600 hover:text-black transition" /></a>
+              <a
+                href="https://github.com/akulakul1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition"
+              >
+                <Github size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/akulpa1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition"
+              >
+                <Linkedin size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/_.akull_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-black transition"
+              >
+                <Instagram size={24} />
+              </a>
             </div>
           </div>
         </div>

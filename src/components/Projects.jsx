@@ -15,7 +15,7 @@ const projects = [
     title: "Office Olympics Game App",
     description:
       "A fun and competitive app designed for NYTT Analytics' office team-building events.",
-    image: "/officegame.jpg",
+    image: "/showcase1.png",
   },
   {
     title: "Character Generator",
