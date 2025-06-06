@@ -116,14 +116,14 @@ const HeroSection = () => {
         viewport={{ once: false }}
       >
         {/* Decorative Left */}
-        <motion.img
+{/*         <motion.img
           src="/left.png"
           alt="Left"
           className="absolute bottom-[10px] left-0 w-[200px]"
           initial={{ x: -20 }}
           animate={{ x: [-20, 0, -20] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-        />
+        /> */}
 
         {/* Decorative Right */}
         <motion.img
