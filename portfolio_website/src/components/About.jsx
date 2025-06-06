@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const cardData = [
   {
     id: '01',
-    title: 'UI/UX Design',
+    title: 'UI/UxxX Design',
     description: 'Designing intuitive, user-focused interfaces with strong UI expertise for seamless experiences.',
     
   },
